@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.heading
+{
+    color: green;
+    font-weight: 800;
+}
+.button
+{
+    border-radius:4px;
+    border:1px solid #AAAAAA;
+    background-color: green;
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+}

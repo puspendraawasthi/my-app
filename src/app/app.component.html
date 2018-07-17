@@ -1,0 +1,30 @@
+<h1 class="heading">
+  Welcome To Angular2...</h1>
+
+
+<label>{{tool}}</label>
+
+<div style="margin-top:5px;">
+  <input [(ngModel)]="tool" type="text" name="tool" placeholder="Enter tool Name">
+  <div style="margin-top:5px;">
+    <label style="margin-top:2%;font-weight:bold">List Of Fruits:</label>
+    <!-- <ul> -->
+    <ul *ngIf="hide">
+      <li *ngFor="let item of appList">{{item.Name}}</li>
+    </ul>
+    
+    <button class="button" (click)="toggle();">Toggle</button>
+  </div>
+
+</div>
+<div style="margin-top:20px;">
+  <label style="font-weight:bold">Room: </label>
+  <select id="ddlrooms" style="padding-top:5px;padding-bottom: 5px;border-radius:4px;border:1px solid #AAAAAA;">
+    <option value="-1" selected>Select</option>
+    <option *ngFor="let obj of roomlist" value={{obj.RoomId}}>{{obj.RoomName}}</option>
+  </select>
+</div>
+
+<div>
+  <app-home></app-home>
+</div>
